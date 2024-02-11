@@ -1,0 +1,17 @@
+Go to cmd > type python and enter > able to execute any python command.
+
+Create a file and type some commands and save. Save as with double quotes (") and extension should be .py.
+Ex:"first.py"
+
+How to run any python file?
+-python <filepath.py>
+Ex: C:\Users\sadhe>python C:\\PythonEmexo\\first.py
+
+-Type cmd in Address > opens cmd prompt directly in the same folder.
+
+-With Python IDE also we can execte python commands.
+Create a project, specify the project name and verify the location. Click on create.
+
+Go to project> right click and open a python text file.
+Start putting the commands, save, run. The o/p will be displayed in the python console.
+

@@ -1,0 +1,49 @@
+List Data Structure :
+
+-If you want to represent group of individual objects as a single entity, we can use list
+
+Properties:
+-insertion order is maintained
+-heterogenous objects are allowed
+-Duplicates are allowed
+-Growable/Expandable in nature.Increase/decrease size of the list
+-Mutable
+
+Creation of list:
+1.l1=[]
+2.l2=[9,6.7,"hello"]
+3.Using list function 
+  a)Pass range inside list function:
+    l3=list(range(8))
+  b)Pass string inside list function:
+    l4=list("hello")
+    x="hi"
+    l7=list(x)
+  c)Passing another list:
+    l5=list([34,90,99.99,"hi",True])
+    l6=list(l1)
+  d)Passing tuple on a list:
+    t3=(67,8.8,"hello")
+    l5=list(t3)
+    print(l5)
+    o/p : [67, 8.8, 'hello']
+  
+4)Using split function of String:
+    x="This is Pycharm"
+    l6=x.split()
+    print(l6)
+    print(type(l6))
+  
+  
+how to access elements inside list?
+
+1.Using Index:
+If we are using valid index, then we will get the corresponding element
+If  we are using invalid index, then index error
+
+2.Slice operator:
+l8=l1[start index : end index : step]
+l8=l1[0:6:2]
+
+
+

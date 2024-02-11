@@ -1,0 +1,5 @@
+https://www.python.org/downloads/
+Download python exe file, double click to install and check the add path to environment variables.
+Then ll be able to access python from anywhere.
+
+Download Pycharm - https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC
