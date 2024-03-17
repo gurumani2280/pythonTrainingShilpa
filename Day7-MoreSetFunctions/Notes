@@ -1,0 +1,10 @@
+Set Data Structure :
+
+If you need to group unique values, use data structure Set or set data type
+
+Properties of Set :
+Duplicates are not allowed
+Insertion order is not maintained
+Index is not available - indexing and slicing is not applicable
+Heterogenous elements are allowed.
+Mutable.
