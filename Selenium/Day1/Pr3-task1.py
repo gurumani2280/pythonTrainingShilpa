@@ -1,0 +1,21 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+driver=webdriver.Chrome()
+time.sleep(2)
+driver.maximize_window()
+driver.get("https://opensource-demo.orangehrmlive.com")
+time.sleep(2)
+username_element=driver.find_element(By.NAME,"username")
+username_element.send_keys("Admin")
+time.sleep(2)
+password_element=driver.find_element(By.NAME,"password")
+password_element.send_keys("admin123")
+time.sleep(2)
+login_element=driver.find_element(By.XPATH,"""//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button""").click()
+time.sleep(2)
+open_menu=driver.find_element(By.XPATH,"""//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span/i""").click()
+time.sleep(2)
+logout=driver.find_element(By.XPATH,"""//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a""").click()
+time.sleep(2)
+driver.quit()

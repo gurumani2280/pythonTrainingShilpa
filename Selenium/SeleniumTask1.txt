@@ -24,6 +24,7 @@ click login button
 4 . capture error message - 
 Invalid credentials
 
-
+doubts : done using XPath
+radio button selection
 
 

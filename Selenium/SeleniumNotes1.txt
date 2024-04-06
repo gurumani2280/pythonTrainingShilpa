@@ -49,3 +49,12 @@ For those elements we need to build xpath to find and then perform actions on th
 Whatever we use to find an element, id, name, xpath, css -­‐> It should always be unique.
 It should only find one matching node unless we want to capture a list of elements.
 
+Additional:
+
+How to ensure if an element is enabled for interaction?
+-Using element.is_selected()
+How to ensure if an element is displayed in HTML?
+-Using element.is_displayed()
+How to ensure if a radio/checkbox is selected/checked in HTML?
+-Using element.is_selected()
+
