@@ -1,5 +1,6 @@
 
 PyTest Fixture Scope Function, Class, Module, Package, Session 
+https://www.geeksforgeeks.org/what-is-the-difference-between-pythons-module-package-and-library/
 https://docs.pytest.org/en/7.1.x/how-to/fixtures.html
 Syntax: @pytest.fixture(scope="module")
 
