@@ -26,5 +26,10 @@ click login button
 Invalid credentials
 
 
+15/6
+
+Do e2e checkout of items after adding to cart.
+
+
 
 
