@@ -9,4 +9,5 @@ class TestClass:
         print(hasattr(x, "check")) #False
         print(hasattr(x, "title")) #True
         #assert hasattr(x, "check")
+        print(x.title())
         assert hasattr(x, "title")

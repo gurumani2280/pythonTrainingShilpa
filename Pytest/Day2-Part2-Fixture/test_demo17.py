@@ -8,6 +8,7 @@ from selenium.webdriver.common.by import By
 
 
 def test_checkbox17(launch_browser6):
+    driver = launch_browser6
     print("Working on Edge browser launched in fixture")
     driver.get("file:///C:/PythonEmexo/pythonTrainingShilpa/Selenium/BasicHtmlElement.html")
     time.sleep(2)

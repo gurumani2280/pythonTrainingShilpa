@@ -16,4 +16,6 @@ class TestClassDemoInstance:
 
     @pytest.mark.regression
     def test_two(self):
+        print()
+        print("in test_two method self.value", self.value)
         assert self.value == 1 #It is double= ,so not assignment operator

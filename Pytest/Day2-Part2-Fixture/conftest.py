@@ -6,7 +6,7 @@ import time
 
 @pytest.fixture(scope="function")
 def launch_browser6():
-    global driver
+    #global driver
     driver = webdriver.Edge()
     time.sleep(2)
     print("Edge browser opened launch_browser4")

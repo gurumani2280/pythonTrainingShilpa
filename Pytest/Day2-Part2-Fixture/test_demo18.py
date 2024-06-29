@@ -8,6 +8,7 @@ from selenium.webdriver.common.by import By
 
 
 def test_checkbox4(launch_browser6):
+    driver = launch_browser6
     print("Working on Edge browser launched in fixture test_checkbox4")
     driver.maximize_window()
     time.sleep(2)
@@ -24,6 +25,7 @@ def test_checkbox4(launch_browser6):
 
 
 def test_check_all_checkboxes18(launch_browser6):
+    driver = launch_browser6
     print("Working on Edge browser launched in fixture test_check_all_checkboxes")
     driver.get("file:///C:/PythonEmexo/pythonTrainingShilpa/Selenium/BasicHtmlElement.html")
     time.sleep(2)

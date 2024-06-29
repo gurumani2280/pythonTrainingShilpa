@@ -9,4 +9,6 @@ def fruit_bowl():
 def test_fruit_salad(fruit_bowl):
     # Act
     print("Fruit Bowl",fruit_bowl)
+    list1 = fruit_bowl
+    print(list1[0:2])
 

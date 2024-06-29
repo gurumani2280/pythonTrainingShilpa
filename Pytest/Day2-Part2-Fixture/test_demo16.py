@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 
 
 def test_checkbox16(launch_browser6):
+    driver = launch_browser6
     print("Working on Edge browser launched in fixture")
     driver.maximize_window()
     time.sleep(2)

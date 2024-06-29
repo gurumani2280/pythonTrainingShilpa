@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 
 
 def test_checkbox15(launch_browser6):
+    driver = launch_browser6
     driver.get("file:///C:/PythonEmexo/pythonTrainingShilpa/Selenium/BasicHtmlElement.html")
     time.sleep(2)
     driver.find_element(By.XPATH, "//input[@value='selenium']").click()
