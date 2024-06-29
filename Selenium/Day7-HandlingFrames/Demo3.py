@@ -16,7 +16,7 @@ driver.switch_to.frame("frame-bottom")
 print(driver.find_element(By.XPATH,"//body").text)
 # to move out the current frame to the page level
 driver.switch_to.default_content()
-driver.switch_to.frame("frameset-middle")
+driver.switch_to.frame("frame-top")
 driver.switch_to.frame("frame-middle")
 print(driver.find_element(By.XPATH,"//div[@id='content']").text)
 driver.switch_to.default_content()
