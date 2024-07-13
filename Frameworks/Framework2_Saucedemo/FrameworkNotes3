@@ -1,0 +1,58 @@
+how to run from Pycharm Terminal(multiple test case together)
+pytest -v -s
+
+how to run parallely
+pip install pytest-xdist
+pytest -v -s -n=2
+
+how to run from the cmd prompt
+
+C:\PythonEmexo\Pythonproject\Framework2_Saucedemo>.venv\Scripts\activate
+(.venv) C:\PythonEmexo\Pythonproject\Framework2_Saucedemo>pytest -v -s -n=2
+
+how to create a batch file and run framework from there.
+cd C:\PythonEmexo\Pythonproject\Framework2_Saucedemo
+call .venv\Scripts\activate
+pytest -v -s -n=2
+pause
+
+After entering the abv commands in the notepad save as, "frame1.bat"
+
+how to run from the jenkins.?
+Install Java21
+https://www.oracle.com/in/java/technologies/downloads/
+Select JDK 21, Windows -- x64 Compressed Archive and download
+Unzip the file and update the location in the env variable.
+Go to bin folder and copy the address location from the address bar
+C:\PythonEmexo\jdk-21_windows-x64_bin\jdk-21.0.3\bin
+Right click on This PC -->Properties-->Advanced System Settings -->Environment variables
+Update the Path variable with above location
+Create a new variable : JAVA_HOME and value = C:\PythonEmexo\jdk-21_windows-x64_bin\jdk-21.0.3
+Open a new cmd prompt and type java -version
+Download Jenkins
+https://www.jenkins.io/download/
+Generic Java package(.war) (Download Jenkins 2.452.3 LTS for:)
+open cmdprompt in the jenkins war file and type below cmd :
+C:\PythonEmexo>java -jar jenkins.war
+After running the cmd, open browser and type localhost:8080 in the address bar
+copy initial admin password and paste in the browser
+created user and credentials as admin/admin
+How to stop Jenkins server.
+ctrl+c in the cmd prompt.
+
+
+How to create a job in jenkins and run it.
+Create new job (+ New Item) -->Provide Job name and click freestyle project. and click on enabled OK button.
+Now configure the job.
+Click on Advanced -->Use Custom Workspace and provide the framework location.
+Go to Build Steps-->Add Build Steps-->Execute Window Batch command
+Provide the below cmds..
+call .venv\Scripts\activate
+pytest -v -s -n=2
+save the configuration
+click on build now button to run the job manually.
+
+
+How to run the jenkins job automatically (daily, every 2mins...)
+Go to configure of job. Build Triggeres-->Build Periodically-->Schedule -- and provide H/15 * * * *
+We can see help also by pressing on the question mark of Schedule
